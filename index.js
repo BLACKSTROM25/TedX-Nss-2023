@@ -231,7 +231,7 @@ new ScrollMagic.Scene({
 
   /// Timer ///
   function updateTimer() {
-    future  = Date.parse("September 28, 2023 9:30:00");
+    future  = Date.parse("September 28, 2023 9:00:00");
     now     = new Date();
     diff    = future - now;
   

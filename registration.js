@@ -27,9 +27,9 @@ let show_names = () =>{
     tier = document.getElementById('tier').value;
     let price = 0;
     if (tier == 'Premium'){
-        price = 700
-    } else if(tier == 'Regular' ){
         price = 500
+    } else if(tier == 'Regular' ){
+        price = 300
     }
 
     document.getElementById('amount').innerHTML = '₹'+(price * no.value)
@@ -79,9 +79,9 @@ let check = () => {
     tier = document.getElementById('tier').value
     let checked = true;
     let error = '';
-    if(!(upi.length > 11)){
+    if(!(upi.length > 5)){
         checked = false;
-        error = 'UPI Tx ID should be atleast 12 characters long'
+        error = 'UPI Tx ID should be atleast 6 characters long'
     }
     if(!(phone.length > 9)){
         checked = false;

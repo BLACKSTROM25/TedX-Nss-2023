@@ -1166,7 +1166,16 @@ footer {
     padding: 30px;
 
     min-height: 600px;
+    margin-bottom: -90px;
   }
+  .containers2{
+    min-height: 600px;
+    transform: translateY(-150px);
+    // z-index: -50;
+    &:hover{
+        z-index: 97;
+    }
+}
   
   .card {
     position: relative;
@@ -1191,12 +1200,15 @@ footer {
   .krish:hover{
     height: 40rem;
   }
+  .umang:hover{
+    height: 44rem;
+  }
   
   .varun:hover{
     height: 43rem;
   }
 
-  .tejal:hover{
+  .anil2:hover{
     height: 45em;
   }
   
@@ -1212,6 +1224,16 @@ footer {
     left: 8px;
     // box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     z-index: 1;
+  }
+
+  .image2{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -40%;
+    left: 8px;
+    // box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 10;
   }
   
   .image img {
@@ -1370,7 +1392,10 @@ footer {
     font-family: "Bebas", sans-serif;
 }
   
-
+#umang{
+    position: relative;
+    right: 8em;
+}
 
 
   .alert{
@@ -1569,8 +1594,7 @@ footer {
       }
     }
     
-    &__head-dest {
-    }
+   
     
     &__body {
       position: relative;
@@ -1707,6 +1731,65 @@ footer {
   }
 }
 
+.sponsor-sec{
+    min-height: 70vh;
+    margin-top: 20em;
+    margin-bottom: 17em;
+    .flex-row{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .row1{
+        .img{
+            width: 20em;
+            border: #eb0028 3px solid; 
+            border-radius: 15px;
+        }
+        .car{
+            width: 34em;
+        }
+        .chan{
+            width: 33em;
+        }
+    }
+    .row2{
+        margin-top: 5em;
+        .img{
+            width: 26em;
+            border: #eb0028 3px solid; 
+            border-radius: 15px;  
+        }
+        .dee{
+            width: 35em;
+        }
+    }
+    .row3{
+        margin-top: 5em;
+        .img{
+            width: 18em;
+            border: #eb0028 3px solid; 
+            border-radius: 15px;  
+        }
+    }
+    .row4{
+        margin-top: 5em;
+        .img{
+            width: 22em;
+            border: #eb0028 3px solid; 
+            border-radius: 15px;  
+        }
+    }
+    .row5{
+        margin-top: 5em;
+        .img{
+            width: 22em;
+            border: #eb0028 3px solid; 
+            border-radius: 15px;  
+        }
+    }
+}
 
 .photos-sec{
     // Colors
@@ -2289,6 +2372,7 @@ body {
             }
         }
     }
+
     .alert{
         height: 100%;
         width: 100%;
@@ -2324,6 +2408,28 @@ body {
         }
     }
 
+    .containers{
+        min-height: auto;
+        margin-bottom: -60px;
+    }
+    .containers2{
+        min-height: auto;
+        margin-bottom: 0px;
+        transform: translateY(0px);
+    }
+
+    .sponsor-sec{
+        margin-bottom: 2em;
+        margin-top: 2em;
+        .flex-row{
+            flex-direction: column;
+            margin: 0;
+            .img{
+                margin: 2em 0;
+            }
+            
+        }
+    }
 
     .mob {
         display: block;

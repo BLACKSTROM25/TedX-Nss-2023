@@ -953,6 +953,15 @@ footer .btn:hover {
   justify-content: center;
   padding: 30px;
   min-height: 600px;
+  margin-bottom: -90px;
+}
+
+.containers2 {
+  min-height: 600px;
+  transform: translateY(-150px);
+}
+.containers2:hover {
+  z-index: 97;
 }
 
 .card {
@@ -978,11 +987,15 @@ footer .btn:hover {
   height: 40rem;
 }
 
+.umang:hover {
+  height: 44rem;
+}
+
 .varun:hover {
   height: 43rem;
 }
 
-.tejal:hover {
+.anil2:hover {
   height: 45em;
 }
 
@@ -997,6 +1010,15 @@ footer .btn:hover {
   top: -40%;
   left: 8px;
   z-index: 1;
+}
+
+.image2 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -40%;
+  left: 8px;
+  z-index: 10;
 }
 
 .image img {
@@ -1152,6 +1174,11 @@ footer .btn:hover {
   color: #eb0028;
   margin-bottom: 40px;
   font-family: "Bebas", sans-serif;
+}
+
+#umang {
+  position: relative;
+  right: 8em;
 }
 
 .alert {
@@ -1433,6 +1460,64 @@ p {
   color: #000;
   -webkit-text-stroke: 1px #000;
   -webkit-text-fill-color: transparent;
+}
+
+.sponsor-sec {
+  min-height: 70vh;
+  margin-top: 20em;
+  margin-bottom: 17em;
+}
+.sponsor-sec .flex-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sponsor-sec .row1 .img {
+  width: 20em;
+  border: #eb0028 3px solid;
+  border-radius: 15px;
+}
+.sponsor-sec .row1 .car {
+  width: 34em;
+}
+.sponsor-sec .row1 .chan {
+  width: 33em;
+}
+.sponsor-sec .row2 {
+  margin-top: 5em;
+}
+.sponsor-sec .row2 .img {
+  width: 26em;
+  border: #eb0028 3px solid;
+  border-radius: 15px;
+}
+.sponsor-sec .row2 .dee {
+  width: 35em;
+}
+.sponsor-sec .row3 {
+  margin-top: 5em;
+}
+.sponsor-sec .row3 .img {
+  width: 18em;
+  border: #eb0028 3px solid;
+  border-radius: 15px;
+}
+.sponsor-sec .row4 {
+  margin-top: 5em;
+}
+.sponsor-sec .row4 .img {
+  width: 22em;
+  border: #eb0028 3px solid;
+  border-radius: 15px;
+}
+.sponsor-sec .row5 {
+  margin-top: 5em;
+}
+.sponsor-sec .row5 .img {
+  width: 22em;
+  border: #eb0028 3px solid;
+  border-radius: 15px;
 }
 
 .photos-sec {
@@ -2012,6 +2097,26 @@ p {
   .alert .cardWrap .lhs {
     width: 97%;
     display: none;
+  }
+  .containers {
+    min-height: auto;
+    margin-bottom: -60px;
+  }
+  .containers2 {
+    min-height: auto;
+    margin-bottom: 0px;
+    transform: translateY(0px);
+  }
+  .sponsor-sec {
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  .sponsor-sec .flex-row {
+    flex-direction: column;
+    margin: 0;
+  }
+  .sponsor-sec .flex-row .img {
+    margin: 2em 0;
   }
   .mob {
     display: block;
