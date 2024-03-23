@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="registration.css">
+  <title>Register TEDxNavrachana School Sama</title>
+
+  
+</head>
+<body id="body">
+  <div id="alert-wrap" class="alert hidden">
+      <div class="cardWrap">
+        <button onclick="toggleInstruct()" class="crossBtn" ><ion-icon name="close-outline"></ion-icon></button>
+        <p class="head" >Instructions</p>
+        
+            <h3>Step 1: Registration</h3>
+            <ol>
+                <li><span>Device:</span> Use a laptop/PC for the best experience.</li>
+                <li><span>Details:</span> Enter your name, email, and phone.</li>
+                <li><span>Ticket Selection:</span> Choose ticket type and quantity.</li>
+            </ol>
+
+            <h3>Step 2: Payment</h3>
+            <ol>
+                <li><span>Amount:</span> Review the total.</li>
+                <li><span>QR Code:</span> Scan it with your UPI app.</li>
+                <!-- <li><span>Transaction ID:</span> Note it down after payment.</li> -->
+            </ol>
+
+            <h3>Step 3: Confirmation</h3>
+            <ol>
+                <li><span>Return:</span> Back to the website.</li>
+                <li><span>UPI ID:</span> Enter the UPI ID used for payment.</li>
+                <li><span>Submit:</span> Confirm payment and registration.</li>
+            </ol>
+
+            <h3>Step 4: Ticket Delivery</h3>
+            <ol>
+                <li><span>Verification:</span> We verify within 24 hours.</li>
+                <li><span>Ticket:</span> Receive via email.</li>
+            </ol>
+
+            <p>If all else fails, please contact:</p>
+            <h8>
+                <span>Aadil Sengupta:</span> +91 7874871877 <br><br>
+                <span>Hartej Sandhu:</span> +91 98980 65363
+            </h8>
+            <p>You can also send a screenshot via WhatsApp to either of the above numbers if you're unable to submit this form.</p>
+
+      </div>
+  </div>
+  <p class="head" style="margin-bottom: 0;">Registrations Closed</p>
+  <p class="head" style="color: white; font-size: 40px;margin-top: 5px; font-weight: normal;" >Tickets sold out.</p>
+  <form style="display: none;" class="cardWrap" id="form" method="post" name="form" action="https://docs.google.com/forms/d/e/1FAIpQLSegcGMDEZLhBMz04oOj8vhbc9DYU3FVigiAV-9hV_QtaYevMw/formResponse" >
+        <p class="head" >Registrations</p>
+
+        <div class="row-wrap">
+          <div class="input-wrap" >
+            <ion-icon class="icon" name="person-outline"></ion-icon>
+            <input id="name1" type="text" name="entry.735950192" class="field" placeholder="Name 1">
+          </div>
+          <div class="input-wrap" >
+            <ion-icon class="icon" name="mail-outline"></ion-icon>
+            <input name="entry.1403010056" id="email" type="text" class="field" placeholder="Email">
+          </div>
+        </div>
+        <div class="row-wrap">
+          <div class="input-wrap hidden" id="name2Wrap" >
+            <ion-icon class="icon" name="person-outline"></ion-icon>
+            <input name="entry.805974137" id="name2" type="text" class="field" placeholder="Name 2">
+          </div>
+          <div class="input-wrap hidden" id="name3Wrap">
+            <ion-icon class="icon" name="person-outline"></ion-icon>
+            <input name="entry.600105591" id="name3" type="text" class="field" placeholder="Name 3">
+          </div>
+        </div>
+        <div class="row-wrap">
+          <div class="input-wrap hidden" id="name4Wrap" >
+            <ion-icon class="icon" name="person-outline"></ion-icon>
+            <input name="entry.258524170" id="name4" type="text" class="field" placeholder="Name 4">
+          </div>
+          <div class="input-wrap hidden" id="name5Wrap">
+            <ion-icon class="icon" name="person-outline"></ion-icon>
+            <input name="entry.1732046308" id="name5" type="text" class="field" placeholder="Name 5">
+          </div>
+        </div>
+        <div class="row-wrap">
+          <div class="input-wrap" >
+            <ion-icon class="icon" name="call-outline"></ion-icon>
+            <input name="entry.297553780" id="phone" type="text" class="field" placeholder="Phone">
+          </div>
+          <div class="input-wrap" >
+            <ion-icon class="icon" name="wallet-outline"></ion-icon>
+            <input name="entry.1382486868" id="upi" type="text" class="field" placeholder="UPI ID">
+          </div>
+        </div>
+        <div class="row-wrap">
+          <div class="input-wrap" >
+            <ion-icon class="icon" name="ticket-outline"></ion-icon>
+        <select name="entry.504874871" id="tier" class="field" >
+          <option value="null" >Select Tier</option>
+          <option value="Premium">Premium</option>
+          <option value="Regular">Regular</option>
+        </select>
+      </div>
+      <div class="input-wrap" >
+        <ion-icon class="icon" name="grid-outline"></ion-icon>
+    <select name="entry.2142267958" id="number" class="field" >
+      <option value="1" id="del">No. of Tickets</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
+      </div>  
+      <div class="row-wrap" >
+        <p id="amount" class="amount" >Amount</p>
+      </div>
+      <div class="row-wrap">
+        <button id="submitBtn" class="button" >Submit</button>
+      </div>
+      <div class="row-wrap" >
+        <button class="infoBtn" onclick="toggleInstruct()">
+          <ion-icon class="info" name="information-circle-outline"></ion-icon>
+          <p>
+            Instructions
+          </p>
+        </button>
+      </div>
+    <div class="row-wrap" >
+      <img src="assets/nss.png" class="qrcode">
+  </div>
+  <div class="row-wrap">
+    <p class="help" >Aadil Sengupta: +91 7874871877 <br>
+      Hartej Sandhu: +91 98980 65363
+    </p>
+  </div>
+      </form>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="registration.js" ></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+@font-face {
+    font-family: Bebas;
+    src: url(assets/BebasNeue-Regular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+
+body{
+  background-color: #080710;
+  color: #eb0028;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+}
+.head{
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.18em;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat';
+}
+.cardWrap{
+  height: auto;
+  min-height: 50vh;
+  width: 80%;
+  background-color: #080710;
+  border-color: #292929;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  padding-bottom: 5em;
+
+  transform: scale(0.85);
+}
+
+.field{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  margin-left: 1.15rem;
+  border-radius: 8px;
+  font-size: 1.7rem;
+  padding: 9px 14px;
+  font-family: 'Montserrat';
+  background-color: #1b1b1b;
+  border: none;
+  outline: none;
+  color: white;
+  width: 90%;
+}
+
+.input-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  .icon{
+    font-size: 2.2em;
+    width: 10%;
+  }
+}
+.row-wrap{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0.8em;
+}
+
+.amount{
+  font-family: 'Montserrat';
+  font-size: 700;
+  font-size: 1.6em;
+}
+.qrcode{
+  width: 300px;
+  margin-top: 1em;
+  border: #eb0028  5px solid;
+  border-radius: 5px;
+  cursor: none;
+  transition: all 0.5s;
+  &:hover{
+    transition: all 0.5s;
+    transform: scale(1.051);
+  }
+}
+
+.button{
+  outline: none;
+  border: none;
+  background-color: #eb0028;
+  color: white;
+  font-family: 'Montserrat';
+  padding: 0.5em 1.6em;
+  border-radius: 7px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+  transition: all 0.41s;
+  &:hover{
+    transform: scale(1.05);
+    transition: all 0.41s;
+  }
+}
+.alert{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .cardWrap{
+    width: 50%;
+    height: auto;
+    max-height: 98%;
+    min-height: 20vh;
+    padding: 0 4em;
+    padding-bottom: 3em;
+    overflow-y: scroll;
+    font-family: 'Futura';
+    color: white;
+
+    border-radius: 15px;
+
+    h3{
+      font-size: 1.7em;
+      color: #eb0028;
+    }
+    ol{
+      font-size: 1.5em;
+    }
+    p{
+      font-size: 1.3em;
+      color: #eb0028;
+    }
+    h8{
+      font-size: 1.4em;
+      list-style: none;
+      margin: 2em 0;
+      line-height: 15px;
+    }
+    span{
+      font-weight: 600;
+    }
+    .head{
+      font-family: 'Futura';
+      font-size: 4em;
+      line-height: 40px;
+      color: #eb0028;
+    }
+  }
+}
+
+.crossBtn{
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  ion-icon{
+    color: white;
+    font-size: 3.5rem;
+  }
+  position: absolute;
+  right: 10px;
+  top: 20px
+}
+
+.scrollStop{
+  height: 100%;
+  overflow: hidden;
+}
+.infoBtn{
+  background: none;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.41s;
+  cursor: pointer;
+  padding: 0 15px;
+  p{
+    color: white;
+    font-family: 'Futura';
+    font-size: 1.5rem;
+    padding: 0 0.11em;
+  }
+  .info{
+    font-size: 2rem;
+
+    color: #eb0028;
+    padding: 0 0.11em;
+  }
+  &:hover{
+    transform: scale(1.05);
+    transition: all 0.41s;
+    background-color: #121212;
+    border-radius: 15px;
+  }
+}
+
+.help{
+  font-size: 1.8em;
+  font-family: 'Futura';
+  text-align: center;
+  line-height: 34px;
+  margin-top: 2em;
+}
+
+
+
+.hidden{
+  display: none;
+}
+.show{
+  display: flex;
+}
+
+
+@media screen and (max-width:800px) {
+  .cardWrap{
+    width: 95%;
+    transform: none;
+    border: none;
+    display: flex;
+    justify-content: center;;
+    flex-direction: column;
+  }
+  .row-wrap{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
+  .input-wrap{
+    width: 97%;
+  }
+  .field{
+    font-size: 1.5rem;
+  }
+  body{
+    margin: 0;
+  }
+  
+  .head{
+    font-size: 2.5rem;
+
+  }
+  .help{
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .alert{
+    top: 0;
+    right: 30px;
+    bottom: auto;
+    height: 100%;
+    .cardWrap{
+      width: 100%;
+      padding: 0 1em;
+      max-height: 98%;
+      
+      span{
+        font-size: 1.15rem;
+      }
+      h8{
+        span{
+          font-size: 1.3rem;
+        }
+        margin: none;
+        font-size: 1.3em;
+      }
+      .head{
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
